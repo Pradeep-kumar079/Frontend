@@ -1,0 +1,112 @@
+/* ManageProducts.css */
+
+/* Container */
+/* div {
+  padding: 20px;
+  
+} */
+ * {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  text-align: left;
+  padding: 12px 10px;
+}
+
+table th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+/* Images in table */
+table td img {
+  border-radius: 5px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Buttons */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Links with buttons */
+a {
+  text-decoration: none;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  table tr {
+    margin-bottom: 15px;
+  }
+  
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  table th {
+    display: none;
+  }
+}

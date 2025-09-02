@@ -1,0 +1,103 @@
+/* Footer.css */
+.footer {
+  background: #555657;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.footer-content h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Social Icons */
+.socials {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff9800; /* Highlight on hover */
+}
+
+/* Links Section */
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Makes it responsive */
+  margin-left: 100px;
+}
+
+.links1, .links2 {
+  margin: 0 20px;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin: 8px 0;
+}
+
+.links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+  color: #ff9800;
+}
+
+/* Bottom copyright */
+.footer + p {
+  text-align: center;
+  background: #111;
+  color: #aaa;
+  padding: 12px 0;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .links1, .links2 {
+    margin: 15px 0;
+  }
+}

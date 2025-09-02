@@ -1,0 +1,359 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+.back {
+  background: linear-gradient(to bottom right, #e3e0dd, #dfd9d7);
+ height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0%;
+  padding-top: 30px;
+  /* box-sizing: border-box;
+  overflow: auto; */
+    padding-bottom: 30px;
+  
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 900px;
+  padding-top: 20px !important;
+  margin: auto;
+  background: rgba(227, 219, 219, 0.6);
+box-shadow: rgba(239, 185, 146, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.register-form h2 {
+  color: #ed703a;
+  margin-bottom: 20px;
+}
+
+.register-form p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  min-height: 450px;
+}
+ 
+ 
+.left {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  /* background: #fffaf5; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 1px solid rgb(219, 142, 91);
+  border-radius: 4px; */
+}
+
+.wave-diagonal-bg {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  transform: rotate(45deg) scale(1.2);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.wave-diagonal-bg svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote-box {
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 25px;
+  margin-right: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 280px;
+  text-align: right;
+}
+
+.quote-box h2 {
+  color: #ff5500;
+  font-size: 19px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  
+}
+.quote-box a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.quote-box p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.quote-box button {
+  background-color: #ed703a;
+  color: white!important;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-right: 45px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+
+
+.right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+   border: 1px solid rgb(219, 142, 91);
+  border-radius: 4px;
+}
+
+.right input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.right button {
+  width: 80%;
+  padding: 10px;
+  /* background-color: #e40000; */
+   background-color: #ed703a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  /* background-color: #d40000; */
+     background-color: #d64b10;
+
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.check input {
+  height: 13px;
+  width: 13px;
+  margin-right: 5px;
+}
+
+.check label {
+  font-size: 14px;
+}
+.check p {
+font-size: 14px;
+  color: #555;
+  margin-top: 34px;
+  margin-left: 49px;
+  
+}
+.check a {
+  color: #ed703a;
+  text-decoration: none;
+}
+
+
+.right h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #e40000;
+}
+
+.right h4 {
+  margin: 15px 0 10px;
+  color: #888;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 80%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.google-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.right h2 {
+    font-size: 22px;
+    width: auto;
+    padding: 3px 23px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e7854d;
+    color: #dfd9d6;
+  }
+
+
+/* Responsive design for mobile */
+
+@media (max-width:575px){
+  .register-form h2{
+    font-size: 20px;
+  }
+  .right h2 {
+    font-size: 22px;
+    width: auto;
+    padding: 3px 23px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e7854d;
+    color: #dfd9d6;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    padding: 30px;
+  }
+
+  .left, .right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .wave-diagonal-bg {
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    transform: rotate(45deg) scale(1.5);
+  }
+
+  .quote-box {
+    margin-right: 0;
+    max-width: none;
+    text-align: center;
+  }
+  .check {
+    width: 100%;
+  }
+  .check input {
+    height: 15px;
+    width: 15px;  
+    margin-right: 8px;
+}
+
+.check label {
+  font-size: 11px;
+}
+.check p {
+  font-size: 11px;
+  color: #555;
+  /* margin-top: 24px;
+  margin-left: 49px; */
+}
+.check a {
+  color: #ed703a;
+  text-decoration: none;
+}
+
+.check a:hover {
+  text-decoration: underline;
+}
+
+}
+/* Responsive design for tablet */
+@media (min-width:576px) and (max-width:768px){
+  .register-form h2{
+    font-size: 22px;
+  }
+  .right h2 {
+    font-size: 24px;
+    width: auto;
+    padding: 3px 23px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #e7854d;
+    color: #dfd9d6;
+  }
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 90%;
+    padding: 20px;
+  }
+  .left, .right {
+    width: 100%;
+    padding: 20px;
+  } 
+  .wave-diagonal-bg {
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    transform: rotate(45deg) scale(1.2);
+  }
+  .quote-box {
+    margin-right: 0;
+    max-width: none;
+    text-align: center;
+  }
+  .google-btn {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .right input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+  }
+  .right button {
+    width: 90%;
+    padding: 12px;
+  }
+  .check {
+    width: 90%;
+  }
+  .check input {
+    height: 15px;
+    width: 15px;  
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.combine-products {
+  display: flex;
+  flex-direction: row;   /* toys left, sports right */
+  gap: 20px;
+  width: 100%;
+  height: 100vh;         /* take full screen height */
+  padding: 20px;
+}
+
+.combine-products .one,
+.combine-products .two {
+  flex: 1;               /* equal width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

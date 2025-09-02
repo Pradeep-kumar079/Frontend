@@ -1,0 +1,125 @@
+.cart_container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.cart_items {
+  height: auto;
+  width: 700px !important;
+  /* width: auto; */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+.cart_items h2 {
+  text-align: center;
+  width: 500px !important;
+  padding: 10px;
+  /* background-color: #f8f8f8; */
+  border-bottom: 1px solid #ddd;
+}
+
+.cart_item {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #989898;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  
+}
+
+.cart_image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.cart_info {
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.quantity_controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  position: relative;
+}
+
+.quantity_controls button {
+  padding: 5px 10px;
+  border: none;
+  color: black;
+  background: #eee;
+  cursor: pointer;
+}
+.quantity_controls button:hover {
+  background: #e17878;
+}
+
+.remove_btn {
+  padding: 5px 10px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px !important;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: 250px;
+  background: #cfdead;
+}
+
+.checkout_btn {
+  padding: 10px;
+  width: 100%;
+  background: #45a339;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.checkout_btn:hover {
+  background: #36832e;
+  cursor: pointer;
+}
+.extra-details {
+  height: auto;
+  width: 400px !important;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.remove_btn {
+  padding: 5px;
+  background: transparent;
+  color: #dc3545;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin-left: 240px; */
+  position: absolute;
+  right: 2px;
+}
+
+.remove_btn:hover {
+  color: #a71d2a;
+}

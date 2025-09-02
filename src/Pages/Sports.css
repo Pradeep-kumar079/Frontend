@@ -1,0 +1,15 @@
+.sports-container {
+  background-color:#edf7ed;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  border: 1px solid #c2c2c2;
+  border-radius: 6px;
+}
+
+.sports-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 products per row */
+  gap: 20px;
+}

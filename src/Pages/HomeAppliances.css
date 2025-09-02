@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-appliances-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #e8f4fd;
+  margin: 3px;
+  border: 1px solid #b1adad;
+  border-radius: 6px;
+  padding: 5px 3px;
+}
+h2{
+  color: black;
+}
+.home-appliances-title {
+  color: black;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.home-appliances-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* flexible columns */
+  grid-auto-rows: auto; /* auto adjust row height */
+  gap: 20px; /* spacing between products */
+  
+  max-height: 600px; /* restrict container height */
+  overflow-y: auto;  /* scroll if more than 2 rows */
+  
+  padding: 20px 3px;
+}

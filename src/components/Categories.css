@@ -1,0 +1,63 @@
+.categories-container {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* prevent wrap */
+  overflow-x: auto;   /* horizontal scroll */
+  overflow-y: hidden;
+  gap: 15px;
+  padding: 10px 20px;
+  scrollbar-width: none; /* Firefox */
+}
+
+.categories::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.categories div {
+  min-width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  margin-left: 30px;
+}
+
+.categories div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.categories div p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}

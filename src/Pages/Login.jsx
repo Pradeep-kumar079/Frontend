@@ -8,13 +8,14 @@ function Login() {
   const [data, setData] = useState({ email: '', password: '' });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const BASE_API_URL = process.env.REACT_APP_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const res = await axios.post('/api/auth/login', data);
+      const res = await axios.post(`${BASE_API_URL}/api/auth/login`, data);
 
       alert('Login Successful');
 

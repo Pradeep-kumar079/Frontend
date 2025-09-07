@@ -6,11 +6,12 @@ import { Link, useNavigate } from 'react-router-dom';
 function Register() {
   const [data, setData] = useState({ name: '', email: '', password: '', phone: '' });
   const navigate = useNavigate();
+  const BASE_API_URL = process.env.REACT_APP_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('/api/auth/register', data);
+      const res = await axios.post(`${BASE_API_URL}/api/auth/register`, data);
       alert(res.data.msg);
       localStorage.setItem('token', res.data.token);
       navigate('/home');
